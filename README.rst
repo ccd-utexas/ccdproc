@@ -15,3 +15,28 @@ Documentation is at `ccdproc.readthedocs.org <http://ccdproc.readthedocs.org/en/
 .. _git: http://git-scm.com/
 .. _github: http://github.com
 .. _Cython: http://cython.org/
+
+Note for ccd-utexas:
+=========
+
+Purpose: This fork is used to control the ccdproc version in use for tsphot. When ccdproc is integrated with astropy, delete this repository and use astropy.photometry through the Anaconda Python distribution.
+
+To install ccdproc to work with tsphot, first install and update anaconda.
+Then clone this repository ; cd /path/to/ccdproc ; python setup.py install
+
+Code in this repository is subject to being overwritten by subsequent releases of ccdproc.
+
+To update ccd-utexas/ccdproc from astropy/ccdproc:
+- Navigate to https://github.com/ccd-utexas/ccdproc
+
+- click "Compare"
+
+- click "Edit"
+
+- Set:
+
+  - base fork: ccd-utexas/ccdproc  base: master
+
+  - head fork: astropy/ccdproc  compare: master
+
+- This will merge astropy/ccdproc into ccd-utexas/ccdproc
